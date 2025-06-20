@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sevgilim Elvin'e</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #cc0066;
+      font-size: 36px;
+    }
+    button {
+      background-color: #ff3399;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    #mesaj {
+      font-size: 24px;
+      color: #99004d;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sevgilim Elvin’e 💕</h1>
+  <button onclick="goster()">Tıkla Aşkım 💖</button>
+  <div id="mesaj"></div>
+
+  <script>
+    const sozler = [
+      "Seni çoook seviyorum 💘",
+      "İyiki hayatımdasın Elvinimmmm 🌸",
+      "Aşkımsın benim, seni çoook seviyorum 😍",
+      "Balımmm benimmm, güzel Elvinim 🥰"
+    ];
+
+    function goster() {
+      const rastgele = Math.floor(Math.random() * sozler.length);
+      document.getElementById("mesaj").innerText = sozler[rastgele];
+    }
+  </script>
+
+</body>
+</html>
